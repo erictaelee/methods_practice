@@ -5,3 +5,15 @@ numbers.forEach(function (number) {
 })
 
 console.log(doubled_number);
+
+var items = [
+  { id: 1, body: 'foo' },
+  { id: 2, body: 'bar' },
+  { id: 3, body: 'foobar' }
+];
+
+var items_id = [];
+items.forEach(function (hash) {
+  items_id.push(hash["id"])
+})
+console.log(items_id);
