@@ -20,9 +20,22 @@
 
 
 
-let numbers = [1, 2, 4, 2];
-let doubledNumbers = [];
-numbers.forEach(function (number) {
-  doubledNumbers.push(number * 2);
+// let numbers = [1, 2, 4, 2];
+// let doubledNumbers = [];
+// numbers.forEach(function (number) {
+//   doubledNumbers.push(number * 2);
+// })
+// console.log(doubledNumbers)
+
+
+let items = [
+  { id: 1, body: 'foo' },
+  { id: 2, body: 'bar' },
+  { id: 3, body: 'foobar' }
+];
+let items2 = [];
+items.forEach(function (number) {
+  items2.push(number["id"])
 })
-console.log(doubledNumbers)
+
+console.log(items2)

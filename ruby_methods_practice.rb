@@ -22,7 +22,14 @@ items = [
 ]
 
 # id = []
-p items.map {|hash| items = hash[:id]}
+# p items.map {|hash| items = hash[:id]}
+
+items2 = items.map do |number|
+  number[:id]
+end
+
+p items2
+
 
 fruits = [
   {"name" => "apple", "color" => "red"},
@@ -36,4 +43,6 @@ doubled_numbers = numbers.map do |number|
   number * 2
 end
 p doubled_numbers
+
+
 
